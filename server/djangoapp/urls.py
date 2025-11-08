@@ -13,7 +13,9 @@ urlpatterns = [
     path('contact/', TemplateView.as_view(template_name="Contact.html")),
 
     # path for login
-    # path(route='login', view=views.login_user, name='login'),
+    path(route='login', view=views.login_user, name='login'),
+    path('logout/', views.logout_request, name='logout'),
+    path('register/', views.registration, name='register'),
 
     # path for dealer reviews view
 
